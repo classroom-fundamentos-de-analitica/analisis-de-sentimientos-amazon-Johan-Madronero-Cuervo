@@ -109,9 +109,9 @@ def pregunta_04():
     # letras.
     countVectorizer = CountVectorizer(
         analyzer=analyzer,
-        lowercase=True,
-        stop_words=None,
-        token_pattern=str,
+        #lowercase=True,
+        #stop_words=None,
+        #token_pattern=str,
         binary=True,
         max_df=1.0,
         min_df=5,
@@ -148,9 +148,6 @@ def pregunta_04():
 
     # Retorne el mejor modelo
     return gridSearchCV
-
-x_train, x_test, y_train, y_test = pregunta_02()
-gridSearchCV = pregunta_04()
 
 def pregunta_05():
     """
